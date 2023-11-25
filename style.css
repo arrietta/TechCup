@@ -16,7 +16,7 @@ body{
     position: absolute;
     background-image: url('images/TechCup_4.png');
     background-size: cover;
-    background-position: 50% 1050px ;
+    background-position: 50%  ;
     height: 88vh;
     filter: blur(3px);
     z-index: -1;
@@ -33,18 +33,27 @@ body{
     background-color: #1e1e1e;
     width: 100%;
 }
+.title{
+    color: white;
+    font-weight: 600;
+    box-shadow: #000000 ;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+    margin-bottom: 20px;
+}
 .Reg{
     position: absolute;
-    top: 43%;
-    left: 40%;
-    font-size: 38px;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
     
 }
 button, button:active, button:focus {
     outline: none;
     border: none;
 }
-.custom-button {
+.button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 38px;
@@ -57,11 +66,17 @@ button, button:active, button:focus {
     background-color: #f0b561; 
     border-radius: 20px;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  }
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
  
-  .custom-button:hover {
+  .button:hover {
     background-color: #000000; 
+}
+@media only screen and (max-width: 680px) {
+    .button{
+        font-size: 32px;
+    }
+    
   }
   
