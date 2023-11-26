@@ -1,3 +1,23 @@
+@import url(https://db.onlinewebfonts.com/c/608e0e06737d0946ba97b34995102218?family=CCScottMcCloud+W00+Bold);
+@font-face {
+    font-family: "CCScottMcCloud W00 Bold";
+    src: url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.eot");
+    src: url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.svg#CCScottMcCloud W00 Bold")format("svg");
+}
+@font-face {
+    font-family: "asinastra";
+    src: url("asinastra.otf") format("opentype");
+    }
+    
+
+/* font-family: "CCScottMcCloud W00 Bold"; */
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +40,7 @@ body{
     height: 89vh;
     filter: blur(3px);
     z-index: -1;
-    position: fixed;
+    /* position: fixed; */
 }
 .content{
     position: relative;
@@ -45,21 +65,64 @@ body{
 }
 .Tech{
     margin-bottom: 20px;
+    transition: 1s;
 }
 .Reg{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    
-    
+    text-align: center;  
+    width: 100%;
+    transition: 1s;
+}
+.reg-img{
+    width: 10rem;
+}
+.reg-box{
+    width: 30vw;
+    border-radius: 25px;
+}
+.f-asin{
+    font-family: 'asinastra' ;
+}
+.f-scot{
+    font-family: 'CCScottMcCloud W00 Bold' ;
+}
+.bg-orange{
+    background-color: #f0b561!important;
+}
+.bg-green{
+    background-color: #009340!important;
+}
+.bg-blue{
+    background-color: #009ddd!important;
+}
+.bg-red
+{
+    background-color: #dd0e1a!important;
+}
+.red{
+    color: #dd0e1a!important;
+}
+.blue{
+    color: #009ddd!important;
+}
+.green{
+    color: #009340!important;
+}
+.orange{
+    color:#f0b561!important ;
+}
+.s-md{
+    font-size: 24px!important;
 }
 button, button:active, button:focus {
     outline: none;
     border: none;
 }
 .button {
+    width: 25rem;
     display: inline-block;
     padding: 10px 20px;
     font-size: 38px;
@@ -67,9 +130,9 @@ button, button:active, button:focus {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    padding: 15px 30px;
+    padding: 15px 0;
     color: #fff; 
-    background-color: #f0b561; 
+     
     border-radius: 20px;
     transition: background-color 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -85,10 +148,28 @@ button, button:active, button:focus {
     margin: 0 auto;
     opacity: 0.9;
 }
+.h-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
 @media only screen and (max-width: 680px) {
     .button{
-        font-size: 32px;
+        font-size: 28px;
+        width: 16rem;
     }
-    
+    .s-md{
+        font-size: 22px!important;
+    }
   }
   
+  @media only screen and (max-width: 992px) {
+    .button{
+        font-size: 28px;
+        width: 20rem;
+    }
+    .s-md{
+        font-size: 22px!important;
+    }
+  }
