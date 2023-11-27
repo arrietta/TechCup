@@ -16,6 +16,7 @@
 
 /* font-family: "CCScottMcCloud W00 Bold"; */
 html{
+    
     scroll-behavior: smooth;
 }
 body{
@@ -30,19 +31,77 @@ body{
 .navbar-toggler-icon{
     background-image: url("https://info.firstinspires.org/hubfs/first_in_show/mobile-menu-icon.svg");
 }
-.background{
+.background-4{
     margin: auto;
     width: 100%;
     position: absolute;
+    left: 0;
     background-image: url('images/TechCup_4.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
     filter: blur(3px);
     z-index: -1;
-    /* position: fixed; */
+    
+}
+.background-1{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url('images/TechCup_1.png');
+    background-size: cover;
+    background-position: 50%  ;
+    height: 89vh;
+    filter: blur(3px);
+    z-index: -1;
+    
+}
+.background-2{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url('images/TechCup_2.png');
+    background-size: cover;
+    background-position: 50%  ;
+    height: 89vh;
+    filter: blur(3px);
+    z-index: -1;
+    
+}
+.background-3{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url('images/TechCup_3.png');
+    background-size: cover;
+    background-position: 50%  ;
+    height: 89vh;
+    filter: blur(3px);
+    z-index: -1;
+    
+}
+.background-5{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url('images/TechCup_5.png');
+    background-size: cover;
+    background-position: 50%  ;
+    height: 89vh;
+    filter: blur(3px);
+    z-index: -1;
+    
 }
 .content{
+    position: relative;
+    height: 89vh;
+
+}
+.content-x{
     position: relative;
     height: 89vh;
 
@@ -51,30 +110,62 @@ body{
 .fixed{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #1e1e1e;
     width: 100%;
 }
 .title{
     color: white;
     font-weight: 600;
-    font-size: 42px;
+    font-size: 24px;
     box-shadow: #000000 ;
-    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+    
     margin-bottom: 20px;
 }
 .Tech{
     margin-bottom: 20px;
     transition: 1s;
 }
+.ab-top{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0 );
+    text-align: center;  
+    width: 100%;
+}
+
 .Reg{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;  
-    width: 100%;
+    width: 90%;
     transition: 1s;
+}
+.bg-dark-2{
+    position: absolute;
+    background-color: #000000!important;
+    opacity: 0.3;
+    z-index: 0;
+    width: 100%;
+}
+.bg-dark-5{
+    position: absolute;
+    left: 0;
+    background-color: #000000!important;
+    opacity: 0.8;
+    z-index: 0;
+    width: 100%;
+}
+
+.nav-item{
+    margin: 10px;
+   
+}
+.Tech > img{
+    margin: 30px;
 }
 .reg-img{
     width: 10rem;
@@ -90,13 +181,52 @@ body{
     font-family: 'CCScottMcCloud W00 Bold' ;
 }
 .bg-orange{
-    background-color: #f0b561!important;
+    background-color: #efac30!important;
+    background-image: url(splashes/svg/orange.svg);
+    background-size: cover;
 }
 .bg-green{
     background-color: #009340!important;
 }
 .bg-blue{
     background-color: #009ddd!important;
+    background-image: url(splashes/png/techcup-21.png);
+    background-size: cover;
+}
+.bg-black{
+    background-color: #0e0e0e!important;
+    background-image: url(splashes/svg/black.svg);
+    background-size: cover;
+  
+    background-position: 50% ;
+}
+.img-bg-black{
+    margin: 20px 0;
+    background-image: url(splashes/svg/black.svg);
+    background-size: cover;
+    background-position: 50% ;
+}
+.ab-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ab-center-md{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blur{
+    filter: blur(3px);
+    position: absolute; 
+    width: 100%; 
+    left: 0;
+    z-index: 0;
+}
+p{
+    font-family: 'inter';
 }
 .bg-red
 {
@@ -108,11 +238,14 @@ body{
 .blue{
     color: #009ddd!important;
 }
+.l-blue{
+    color: #96d3ec;
+}
 .green{
     color: #009340!important;
 }
 .orange{
-    color:#f0b561!important ;
+    color:#f69722!important ;
 }
 .s-md{
     font-size: 24px!important;
@@ -137,16 +270,36 @@ button, button:active, button:focus {
     transition: background-color 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.arrow{
+    transform: rotate(90deg);
+}
+.bottom_btn{
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
 
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0 );
+    text-align: center;  
+}
+.date{
+    font-family: 'inter';
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+}
  
-  .button:hover {
+.button:hover {
     background-color: #000000; 
 }
-.back-white{
-    width: 80%;
+.bg-white{
+    width: 100%;
     background-color: white;
-    margin: 0 auto;
-    opacity: 0.9;
+
 }
 .h-center{
     display: flex;
@@ -154,22 +307,219 @@ button, button:active, button:focus {
     justify-content: center;
    
 }
-@media only screen and (max-width: 680px) {
-    .button{
-        font-size: 28px;
-        width: 16rem;
+.ab-h-center{
+    position: absolute;
+    top: 50%;
+   
+    transform: translate(0,-50%);
+}
+.logo{
+    width: 400px;
+}
+.logo-m{
+    width: 100%;
+}
+.logo-s{
+    width: 140px;
+    margin: 10px;
+}
+.bg-splash{
+    position: absolute;
+    width: 100%;
+}
+.bg-splash > img{
+    height: 50vh;
+   
+    position: absolute;
+}
+.map{
+    
+    background-color: white;
+    width: 60%;
+    height: 58vh;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+   
+}
+.ab-b{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0 );
+    text-align: center;  
+    
+}
+
+.text-h{
+    font-weight: bold;
+
+}
+.nav-item  a{
+    margin: 0 10px;
+}
+.h1{
+    font-size: 64px!important;
+}
+.h1-1{
+    font-size: 52px!important;
+}
+.h2{
+    font-size: 36px!important;
+}
+.h3{
+    font-size: 28px!important;
+}
+.h4{
+    font-size: 20px!important;
+}
+footer{
+
+    border-top:solid #898c9b 2px;
+    text-align: center;
+    background-color: #000;
+    color: #E8E7E8;
+    text-decoration: none;
+}
+.footer-copyright{
+    border-top: #E8E7E8 solid 1pxs;
+    text-align: center;
+}
+.foot{
+    padding:20px 0 ;
+    display: flex;
+    max-width: 60%;
+    min-width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+.footer-copyright{
+    padding: 20px 0 ;
+}
+.foot a{
+    position: relative;
+    margin: 0 2vw;
+}
+img{
+    object-fit: contain;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;    
+}
+@media only screen and (max-width: 992px) {
+    .logo-m{
+        width: 80%;
     }
-    .s-md{
-        font-size: 22px!important;
+    .h1{
+        font-size: 48px!important;
     }
-  }
-  
-  @media only screen and (max-width: 992px) {
+    .h1-1{
+        font-size: 44px!important;
+    }
+    .h2{
+        font-size: 24px!important;
+    }
+    .h3{
+        font-size: 18px!important;
+    }
+    .h4{
+        font-size: 16px!important;
+    }
+    .Tech > img{
+        margin: 10px;
+    }
     .button{
         font-size: 28px;
         width: 20rem;
     }
+    .logo{
+        width: 300px;
+    }
     .s-md{
         font-size: 22px!important;
     }
-  }
+    .title{
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    .ab-center-md{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .layout-branding{
+        display: flex;
+        flex-direction: column;
+    }
+    .layout-branding > a{
+        margin: 10px;
+    }
+    .dis-sm{
+        display: none;
+    }
+    .content-x{
+        position: relative;
+        height: auto;
+    
+    }
+    .h1{
+        font-size: 38px!important;
+    }
+    .h1-1{
+        font-size: 34px!important;
+    }
+    .h2{
+        font-size: 20px!important;
+    }
+    .h3{
+        font-size: 18px!important;
+    }
+    .h4{
+        font-size: 12px!important;
+    }
+    .top-block{
+        height: 40vh;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .bottom-block{
+        height: 69vh;
+        margin-top: 20px;
+        width: 80%;
+    }
+    .text-h{
+        font-size: 28px;
+    }
+    .Tech{
+        margin: 0;
+    }
+    .button{
+        font-size: 28px;
+        width: 16rem;
+    }
+    .logo-s{
+        width: 100px;
+        margin: 10px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .s-md{
+        font-size: 22px!important;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .map{
+        width: 80%;
+    }
+    .foot{
+        max-width: 90vw;
+    }
+}
