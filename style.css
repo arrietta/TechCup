@@ -10,11 +10,9 @@
 }
 @font-face {
     font-family: "asinastra";
-    src: url("asinastra.otf") format("opentype");
+    src: url("https://raw.githubusercontent.com/arrietta/TechCup/main/asinastra.otf") format("opentype");
     }
     
-
-/* font-family: "CCScottMcCloud W00 Bold"; */
 html{
     
     scroll-behavior: smooth;
@@ -36,7 +34,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/TechCup_4.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_4.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -49,7 +47,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/TechCup_1.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_1.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -62,7 +60,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/TechCup_2.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_2.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -75,7 +73,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/TechCup_3.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_3.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -88,7 +86,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/TechCup_5.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_5.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -149,7 +147,7 @@ body{
     width: 100%;
     position: absolute;
     left: 0;
-    background-image: url('images/background.png');
+    background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/background.png');
     background-size: cover;
     background-position: 50%  ;
     height: 89vh;
@@ -186,7 +184,7 @@ body{
 }
 .bg-orange{
     background-color: #efac30!important;
-    background-image: url(splashes/svg/orange.svg);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/orange.svg);
     background-size: cover;
 }
 .bg-green{
@@ -194,19 +192,19 @@ body{
 }
 .bg-blue{
     background-color: #009ddd!important;
-    background-image: url(splashes/png/techcup-21.png);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/png/techcup-21.png);
     background-size: cover;
 }
 .bg-black{
     background-color: #0e0e0e!important;
-    background-image: url(splashes/svg/black.svg);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/black.svg);
     background-size: cover;
   
     background-position: 50% ;
 }
 .img-bg-black{
     margin: 20px 0;
-    background-image: url(splashes/svg/black.svg);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/black.svg);
     background-size: cover;
     background-position: 50% ;
 }
