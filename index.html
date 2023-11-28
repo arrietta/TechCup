@@ -102,7 +102,7 @@
                 </div>
                 
             </div>
-            <a  href="#page-2" ><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
+            <a  href="#page-2" onclick="down()"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
         </div>
         
         <div class="container-fluid content  h-center" id="page-2">
@@ -234,8 +234,8 @@
 
             }
             function down(){
-                let vh = window.innerHeight /100;
-                window.scroll(0,window.scrollY + (89 * vh))
+                
+                window.scroll(0,window.scrollY -82);
                 
             }
            
