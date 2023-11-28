@@ -371,7 +371,7 @@ button, button:active, button:focus {
     font-size: 36px!important;
 }
 .h3{
-    font-size: 28px!important;
+    font-size: 24px!important;
 }
 .h4{
     font-size: 20px!important;
@@ -409,6 +409,11 @@ img{
     vertical-align: middle;
     overflow-clip-margin: content-box;
     overflow: clip;    
+}
+@media only screen and (max-width: 1200px){
+    .h3{
+        font-size: 20px!important;
+    }
 }
 @media only screen and (max-width: 992px) {
     .logo-m{
@@ -479,7 +484,7 @@ img{
         font-size: 20px!important;
     }
     .h3{
-        font-size: 18px!important;
+        font-size: 16px!important;
     }
     .h4{
         font-size: 12px!important;
