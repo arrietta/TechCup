@@ -77,7 +77,7 @@
         
     </Header>
     <main >
-        <div class="background-4 " ></div>
+       
         
         <div class="background-6 content"></div>
         <div class="background-1" style="position: fixed;"></div>
@@ -90,15 +90,17 @@
                 <div class="Tech"><img onclick="hide_choose()" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" class='logo' alt=""> </div>
                 <div class="date" id="date"><h2>11-12 ДЕКАБРЯ</h2></div>
                 <a  href="#" id="reg"><button class="button bg-orange f-asin" onclick="show_choose()">Регистрация</button></a>
-                <div id="choose" style="display: none; transition: 1s;">
+                <div id="choose" style="display: none;">
+                    
                     <div class="row ">
-                        <div class="col-md-6 my-md-3 my-1  text-center f-scot p-2 "><a href="https://forms.gle/FLxYpn97Tv4LLa1g7"><button class="button bg-green s-md ">FLL Explore</button></a></div>
-                        <div class="col-md-6 my-md-3 my-1 text-center f-scot p-2" ><a href="https://forms.gle/rebULiCb86Q2RJf99"><button class="button bg-red s-md ">FLL Challenge</button></a></div>
+                        <div class="col-xl-4  my-md-1 my-1  text-center f-scot p-2 "><a href="#page-6" ><button class="button bg-red s-md ">First Robotics</button></a></div>
+                        <div class="col-xl-4   my-md-1 my-1 text-center f-scot p-2" ><a href="https://forms.gle/rebULiCb86Q2RJf99"><button class="button bg-orange s-md ">Cyber Tournament</button></a></div>
+                        <div class="col-xl-4   my-md-1 my-1  text-center f-asin p-2"><a href="https://forms.gle/ahNmAWqkYsqfExFN8"><button class="button bg-green s-md ">Гости</button></a></div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 my-md-3 my-1  text-center f-scot p-2"><a href="https://forms.gle/ahNmAWqkYsqfExFN8"><button class="button bg-orange s-md ">FIRST Tech Challenge</button></a></div>
-                        <div class="col-md-6 my-md-3 my-1 text-center f-asin p-2"><button class="button bg-blue s-md ">Гости</button></div>
-                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-4 my-md-3 my-1  text-center f-asin p-2"><a href="https://forms.gle/ahNmAWqkYsqfExFN8"><button class="button bg-green s-md ">Гости</button></a></div>
+                    </div> -->
+                    
                 </div>
                 
             </div>
@@ -160,7 +162,7 @@
                         2-х дневный IX Открытый чемпионат 2023 года
                         пройдет с участием <span class="text-light">135</span> команд и <span class="text-light">2500</span> участников.</h1>
                 </div>
-                <a onclick="down()" href="#page-4"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
+                <a onclick="down()" href="#page-5"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
                 
             </div>
             
@@ -184,9 +186,6 @@
                                 
                             </ul>
                             
-                            
-                            
-                            
                             </h1>
                     </div>
                     
@@ -194,13 +193,33 @@
                 <div class="col-md-6 dis-sm " style="z-index: 0;">
                     <div class=" background-5 "></div>
                 </div>
-                <a onclick="down()" href="page-6"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
+                <a onclick="down()" href="#page-6" style="z-index: 1;"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
                 
             </div>
             
             
         </div>
-        <div class="container-fluid " id="page-6">            
+        <div class="container-fluid " id="page-6" > 
+            
+            
+            <div class=" content " style="left: 0; opacity: 1;"  >
+                <div class="ab-top">
+                    <img class="logo-m" src="logotype/png/first_kaz_vert.png" height="100" alt="" >
+                </div>
+                <div class="ab-center">
+                    <div class="row ">
+                        <div class="col-12  my-md-1 my-1  text-center f-scot p-2 "><a href="#" onclick=""><button class="button bg-green s-md ">FLL Explore</button></a></div>
+                        <div class="col-12   my-md-1 my-1 text-center f-scot p-2" ><a href="#"><button class="button bg-red s-md ">FLL Challenge</button></a></div>
+                        <div class="col-12    my-md-1 my-1  text-center f-asin p-2"><a href="#"><button class="button bg-orange s-md ">FIRST Tech Challenge</button></a></div>
+                    </div>
+                </div>
+                <a  href="#page-7"><div class="bottom_btn h-center" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg" class="arrow" height="15" alt=""></div></a>
+                
+            </div>
+            
+            
+        </div>
+        <div class="container-fluid " id="page-7">            
             <div class=" content ">
                 <div class="ab-top dis-sm" id="top_partners">
                     <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" class='logo-s'alt="">
@@ -237,7 +256,7 @@
                 setTimeout(function(){
                     window.scroll(0,window.scrollY -82);
                 },500)
-                console.log('hello');
+                
                 
                 
             }
