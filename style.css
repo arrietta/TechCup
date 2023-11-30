@@ -37,7 +37,7 @@ body{
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_4.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     filter: blur(3px);
     z-index: -1;
     
@@ -50,7 +50,7 @@ body{
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_1.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     filter: blur(3px);
     z-index: -1;
     
@@ -63,7 +63,7 @@ body{
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_2.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     filter: blur(3px);
     z-index: -1;
     
@@ -76,7 +76,7 @@ body{
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_3.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     filter: blur(3px);
     z-index: -1;
     
@@ -89,19 +89,19 @@ body{
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/TechCup_5.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     filter: blur(3px);
     z-index: -1;
     
 }
 .content{
     position: relative;
-    height: 89vh;
+    height: calc(100vh - 82px)
 
 }
 .content-x{
     position: relative;
-    height: 89vh;
+    height: calc(100vh - 82px);
 
 }
 
@@ -145,15 +145,16 @@ body{
 .background-6{
     margin: auto;
     width: 100%;
-    position: absolute;
+    
     left: 0;
     background-image: url('https://raw.githubusercontent.com/arrietta/TechCup/main/images/background.png');
     background-size: cover;
     background-position: 50%  ;
-    height: 89vh;
+    height: calc(100vh - 82px);
     z-index: 1;
 }
 .bg-dark-5{
+    height: 100vh;
     position: absolute;
     left: 0;
     background-color: #000000!important;
@@ -174,7 +175,7 @@ body{
 }
 .reg-box{
     width: 30vw;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 .f-asin{
     font-family: 'asinastra' ;
@@ -184,16 +185,55 @@ body{
 }
 .bg-orange{
     background-color: #efac30!important;
-    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/orange.svg);
+   
     background-size: cover;
+   
 }
 .bg-green{
     background-color: #009340!important;
+    
+}
+.bgi-green{
+    background-image: url(images/green.png);
+    background-size: cover;
+    filter: blur(3px);
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-position: 50%  ;
+    height: calc(100vh - 82px);
+    z-index: 1;
+}
+.bgi-red{
+    background-image: url(images/red.png);
+    background-size: cover;
+    filter: blur(3px);
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-position: 50%  ;
+    height: calc(100vh - 82px);
+    z-index: 1;
+}
+.bgi-orange{
+    background-image: url(images/orange.png);
+    background-size: cover;
+    filter: blur(3px);
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-position: 50%  ;
+    height: calc(100vh - 82px);
+    z-index: 1;
 }
 .bg-blue{
     background-color: #009ddd!important;
-    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/png/techcup-21.png);
+  
     background-size: cover;
+   
 }
 .bg-black{
     background-color: #0e0e0e!important;
@@ -213,6 +253,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
 }
 .ab-center-md{
     position: absolute;
@@ -233,6 +274,7 @@ p{
 .bg-red
 {
     background-color: #dd0e1a!important;
+    background-size: cover;
 }
 .red{
     color: #dd0e1a!important;
@@ -256,19 +298,28 @@ button, button:active, button:focus {
     outline: none;
     border: none;
 }
+.ab-top-left{
+    position: absolute;
+    left :0;
+    top: 0;
+    transform: rotate(-180deg)
+
+}
 .button {
-    width: 25rem;
+    margin: 10px 0;
+    max-width: 80%;
+    min-width: 30%;
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 38px;
+    padding: 10px 20px !important;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     padding: 15px 0;
     color: #fff; 
-     
-    border-radius: 20px;
+    height: inherit;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -283,7 +334,7 @@ button, button:active, button:focus {
     height: 60px;
     border-radius: 100%;
 
-    bottom: 5%;
+    bottom: 4%;
     left: 50%;
     transform: translate(-50%,0 );
     text-align: center;  
@@ -299,9 +350,32 @@ button, button:active, button:focus {
     background-color: #000000; 
 }
 .bg-white{
-    width: 100%;
+    
     background-color: white;
 
+}
+.fll-top{
+    height: 100px;
+}
+.competition{
+    width: 100%;display: none;transition: 1s;
+}
+.fll{
+    border-radius: 15px;
+    height:150px ;
+    width: 250px;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+}
+.fll-logo{
+    position: absolute; 
+    right: 0; 
+    bottom: 20px;
+}
+.fll-ex{
+    background-image: url('https://info.firstinspires.org/hs-fs/hubfs/first_in_show/FLL_2022_Feature_Image_1.webp');
+    
 }
 .h-center{
     display: flex;
@@ -322,7 +396,7 @@ button, button:active, button:focus {
     width: 100%;
 }
 .logo-s{
-    width: 140px;
+    width: 115px;
     margin: 10px;
 }
 .bg-splash{
@@ -353,6 +427,10 @@ button, button:active, button:focus {
     text-align: center;  
     
 }
+.to_top{
+    position: fixed; height: 50px;width: 50px; background-color: black; opacity: 0.4;z-index: 3; border-radius: 100%;transform: rotate(-90deg);bottom: 20;
+    right: 20;
+}
 
 .text-h{
     font-weight: bold;
@@ -373,9 +451,13 @@ button, button:active, button:focus {
 .h3{
     font-size: 24px!important;
 }
+.h3-1{
+    font-size: 24px!important;
+}
 .h4{
     font-size: 20px!important;
 }
+
 footer{
 
     border-top:solid #898c9b 2px;
@@ -387,6 +469,9 @@ footer{
 .footer-copyright{
     border-top: #E8E7E8 solid 1pxs;
     text-align: center;
+}
+.ftc-top{
+    height: 8vh;
 }
 .foot{
     padding:20px 0 ;
@@ -414,6 +499,9 @@ img{
     .h3{
         font-size: 20px!important;
     }
+    .h3-1{
+        font-size: 20px!important;
+    }
 }
 @media only screen and (max-width: 992px) {
     .logo-m{
@@ -431,6 +519,9 @@ img{
     .h3{
         font-size: 18px!important;
     }
+    .h3-1{
+        font-size: 18px!important;
+    }
     .h4{
         font-size: 16px!important;
     }
@@ -438,8 +529,8 @@ img{
         margin: 10px;
     }
     .button{
-        font-size: 28px;
-        width: 20rem;
+        font-size: 26px;
+        width: 50%;
     }
     .logo{
         width: 300px;
@@ -453,6 +544,11 @@ img{
     
 }
 @media only screen and (max-width: 767px) {
+    
+    .fll-top{
+        height: 12vh;
+        
+    }
     .ab-center-md{
         position: absolute;
         top: 0;
@@ -474,6 +570,9 @@ img{
         height: auto;
     
     }
+    .ab-center{
+        width: 100%;
+    }
     .h1{
         font-size: 38px!important;
     }
@@ -484,7 +583,10 @@ img{
         font-size: 20px!important;
     }
     .h3{
-        font-size: 16px!important;
+        font-size: 2.4vh!important;
+    }
+    .h3-1{
+        font-size: 2.1vh!important;
     }
     .h4{
         font-size: 12px!important;
@@ -507,9 +609,13 @@ img{
         margin: 0;
     }
     .button{
-        font-size: 28px;
-        width: 16rem;
+        font-size: 19px !important;
+        width: 80%;
     }
+    
+    
+    
+    
     .logo-s{
         width: 100px;
         margin: 10px;
