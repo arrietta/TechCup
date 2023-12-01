@@ -1,4 +1,4 @@
-@import url(https://db.onlinewebfonts.com/c/608e0e06737d0946ba97b34995102218?family=CCScottMcCloud+W00+Bold);
+/* @import url(https://db.onlinewebfonts.com/c/608e0e06737d0946ba97b34995102218?family=CCScottMcCloud+W00+Bold); */
 @font-face {
     font-family: "CCScottMcCloud W00 Bold";
     src: url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.eot");
@@ -11,6 +11,10 @@
 @font-face {
     font-family: "asinastra";
     src: url("https://raw.githubusercontent.com/arrietta/TechCup/main/asinastra.otf") format("opentype");
+}
+@font-face {
+    font-family: "CCScottMcCloud W00 Bold";
+    src: url("https://raw.githubusercontent.com/arrietta/TechCup/main/sc.woff") format("woff");
     }
     
 html{
@@ -22,6 +26,22 @@ body{
     padding: 0;
     font-family: 'Inter';
     background-color: #1e1e1e;
+}
+
+.body::before{
+    background-image: url('images/TechCup_1.png');
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: 50%;
+    background-size: cover;
+    filter: brightness(0.4) blur(4px);
+    
+    
 }
 .navbar{
     padding: 10px 20px;
@@ -116,7 +136,7 @@ body{
     color: white;
     font-weight: 600;
     font-size: 24px;
-    box-shadow: #000000 ;
+   
     
     margin-bottom: 20px;
 }
@@ -206,7 +226,7 @@ body{
     z-index: 1;
 }
 .bgi-red{
-    background-image: url(images/red.png);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/red.png);
     background-size: cover;
     filter: blur(3px);
     margin: auto;
@@ -218,7 +238,19 @@ body{
     z-index: 1;
 }
 .bgi-orange{
-    background-image: url(images/orange.png);
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/orange.png);
+    background-size: cover;
+    filter: blur(3px);
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-position: 50%  ;
+    height: calc(100vh - 82px);
+    z-index: 1;
+}
+.bgi-white{
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/orange.png);
     background-size: cover;
     filter: blur(3px);
     margin: auto;
@@ -343,7 +375,7 @@ button, button:active, button:focus {
     font-family: 'inter';
     color: #fff;
     font-weight: 700;
-    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+    
 }
  
 .button:hover {
