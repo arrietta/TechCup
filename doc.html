@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link href="https://db.onlinewebfonts.com/c/608e0e06737d0946ba97b34995102218?family=CCScottMcCloud+W00+Bold" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <title>TechCup</title>
     <style>
@@ -18,22 +18,14 @@
         }
         body::before{
             background-image: url('images/TechCup_1.png');
-            content: "";
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background-position: 50%;
-            background-size: cover;
-            filter: brightness(0.3) blur(4px);
-            
+          
             
         }
+        
     </style>
 </head>
-<body >
+<body class="bg-d">
     <Header>
         <nav class="navbar navbar-expand-lg navbar-black fixed">
             <a class="navbar-brand Logo" href="#" >
@@ -101,8 +93,265 @@
         
         
     </Header>
-    <main class="container-fluid">
+    <main >
+        <div class="content background-6 blur" id="page-1" >
+            <div class="ab-top" id="top_partners">
+                <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/ustem_foundation-26.png" class='logo-s'alt=""><img class="logo-s" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/Daryn_3.png" class='' alt="" >
+            </div>
+            <div class="Reg">
+                <div class="Tech"><img onclick="hide_choose()" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" class='logo' alt=""> </div>
+                <div class="date" id="date"><h2>11-12 ДЕКАБРЯ</h2></div>
+                <a  href="#" id="reg"><button class="button bg-orange f-asin" onclick="show_choose()">Регистрация</button></a>
+                <div id="choose" style="display: none;">
+                    
+                    <div class="row ">
+                        <div class="col-xl-12  my-md-1 my-1  text-center f-scot p-2 "><a href="#page-6" onclick="down()"><button class="button bg-red  ">First Robotics</button></a></div>
+                        <div class="col-xl-12  my-md-1 my-1 text-center f-scot p-2" ><a href="#page-7" onclick="down()"><button class="button bg-orange ">TechCup Drones</button></a></div>
+                        <div class="col-xl-12   my-md-1 my-1  text-center f-asin p-2" ><a href="https://forms.gle/ahNmAWqkYsqfExFN8" ><button class="button bg-green " >Гости</button></a></div>
+                    </div>
+                   
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="container-fluid content  h-center" id="page-2">
+            
+            <div class="ab-top" style="top:2%"  >
+                <div class="title ">
+                    Адрес: Улица Тимирязева, 42,
+                    <br>
+                    КЦДС “Атакент”, павильон 11
+    
+                </div>
+            </div>
+            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.2391472774348!2d76.9045964!3d43.225445400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692879f9bcc9%3A0xaaeb3a55fd2e90bc!2z0YPQuy4g0KLQuNC80LjRgNGP0LfQtdCy0LAgNDIsINCQ0LvQvNCw0YLRiyAwNTAwNjA!5e0!3m2!1sru!2skz!4v1701014294405!5m2!1sru!2skz"  style="width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            
+        </div>
+        <div class="container-fluid bg-black bg-blur py-5"  id="page-3">
+            
+                <div class=" container my-5">
+                    <div class="h-center">
+                        <h2 class="orange h3 "><strong>Презентация Инновационных проектов FLL EXPLORE и FLL CHALLENGE на большой сцене:</strong></h2>
+                        <p class="text-light">
+                            - Зарегистрируйте свой инновационный проект по теме сезона MASTERPIECE;
+                        </p>
+                        <p class="text-light">
+                            - Подготовьте презентацию о своем Инновационном проекте для демонстрации;
+                        </p>
+                        <p class="text-light">
+                            - Оформите презентацию в стиле TechCup, используя брендбук, который доступен на сайте;
+                        </p>
+                        <p class="text-light">
+                            - Выступление по презентации не должно превышать 10 минут;
+                        </p>
+                        <p class="text-light">
+                            
+                        - Вышлите свою презентацию до 5 декабря на почту: n.nurzhanov@ustemrobotics.kz  
+                        </p>
+                        <p class="text-light">
+                            - В теме письма укажите Название команды_название проекта_категория (например, Alpha Study_FLL Explore) 
+                        </p>
+                        <p class="text-light">
+                            - Укажите название файла следующим образом: Название команды_название проекта_категория (например, Alpha Study_FLL Explore.pdf) 
+                        </p>
+                        <p class="text-light">
+                            - Формат презентации .pdf 
+                        </p>
+                        <p class="text-light">
+                            Защищать Инновационный проект на сцене можно как единолично, так и в команде.
+                        </p>
+                        <p class="text-light">
+                            Для  мероприятие будут отобраны 8 лучших презентаций и идей (по 2 команды из каждой категории - всего 4 команды на каждый день).
+                        </p>
+                        <p class="text-light">
+                            Воспользуйтесь шансом представить свой проект широкой аудитории, выиграть ценные призы и получить заслуженное внимание на мероприятии.
+                        </p>
+                        <p class="text-light">
+                            Удачи в создании и представлении ваших инновационных идей!
+                        </p>
+                        <p class="text-light orange">
+                            #TechCupAlmaty2023
+                        </p>
+                       
+                        
+                       
+                        
+                        
+                        
+                        
+                        
+                        
+                       
+                        
+                       
+                        
+                    </div>
+                    
+                </div>
+                
+            
+            
+            
+        </div>
 
+        <div class="container-fluid bg-orange p-5" id="page-5" >            
+            <div class=" ">
+                <div class="   ">
+                    <div class="h-center" style="z-index: 1; ">
+                        <h1 class="h3 text-light  "><strong>Үлкен сахнада FLL EXPLORE және FLL CHALLENGE инновациялық жобаларын қорғау:</strong> </h1>
+                        <h1 class="text-light my-md-3  text-start h4">
+                            <ul>
+                                <li class="m-1">MASTERPIECE маусымының тақырыбына негізделген инновациялық жобаңызды тіркеңіз;</li>
+                                <li class="m-1">Демонстрация үшін инновациялық жобаңыз туралы презентация дайындаңыз;</li>
+                                <li class="m-1">Веб-сайттағы брендбукты пайдаланып TechCup стилінде презентация жасаңыз;</li>
+                                <li class="m-1">Презентация 10 минуттан аспауы керек;</li>
+                                <li class="m-1">Презентацияңызды 5 желтоқсанға дейін n.nurzhanov@ustemrobotics.kz электрондық поштасына жіберіңіз.</li>
+                                <li class="m-1">Хаттың тақырыбында Топ атауы_жоба атауы_санатты көрсетіңіз (мысалы, Alpha Study_theater_FLL Explore)</li>
+                                <li class="m-1">Презентация форматы .pdf</li>
+                                <div class="mt-3">
+                                    <li class=" no_dec">Инновациялық жобаны жеке немесе топпен ұсына аласыз.</li>
+                                    <li class="no_dec">Іс-шараға 8 үздік презентациялар мен идеялар таңдалады (әр санаттан 2 команда – әр күнге 4 команда).</li>
+                                    <li class="no_dec">Жобаңызды кең аудиторияға ұсыну арқылы, бағалы сыйлықтар ұтып алу мүмкіндігіне ие болыңыз.</li>
+                                    <li class="no_dec">Инновациялық жобаны жасауда және ұсынуда сәттілік тілейміз!</li>
+                                    <li class="no_dec">#TechCupAlmaty2023</li>
+                                </div>
+                                
+                                
+                            </ul>
+                            
+                            </h1>
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="container-fluid bg-black " id="page-6">    
+            
+            <div class="  content p-2 pt-5 " style="left: 0;   "  >
+                
+                <div class="container" style="z-index: 1;">
+                    <div  id="first" >
+                        <div class="text-center" >
+                            <img class="logo-m" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/first_kaz_white.png" height="100" alt="" >
+                        </div>
+                        <div class="ab-center">
+                            <div class="text-center ">
+                                <div class=" my-md-1 my-1  text-center f-scot p-2 "><button onclick="open_info('#explore')" class="button bg-green  ">FLL Explore</button></div>
+                                <div class="  my-md-1 my-1 text-center f-scot p-2" ><button class="button bg-red  " onclick="open_info('#Challenge')" >FLL Challenge</button></div>
+                                <div class="  my-md-1 my-1  text-center f-asin p-2" ><button class="button bg-orange  " onclick="open_info('#FTC')">FIRST Tech Challenge</button></div>
+                            </div>
+                            
+                        </div>    
+                    </div>
+                    
+                    
+                    <div class="competition "id="explore"  >
+                        
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#explore')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto  "  >
+                            <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/svg/explore.svg" class="fll-top"  alt="">
+                            <h2 class=" h2 text-light m-3" ><strong>(6 - 10)</strong></h2>
+                        </div>
+                        
+                        <div  class="h-center text-center container mt-5" >
+        
+                          
+                            <div class="h3-1 text-light m-2 " style='font-weight: bold;'>
+                                FIRST® LEGO League Explore — это программа, способствующая
+                                развитию интереса к науке, технологии и инженерии. Дети учатся
+                                строить модели из конструктора LEGO, решать простые инженерные
+                                задачи и представлять свои проекты на темы, связанные с реальными
+                                мировыми проблемами. На чемпионате участвуют более 30-ти команд
+                                со всего Казахстана.
+                            </div>
+                
+                        </div>
+                    
+                        <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/FLxYpn97Tv4LLa1g7" ><button class="button bg-white green s-md h3 " style="height: 48px; ">Участвовать</button></a></div>
+                        
+                    </div>
+                    
+                    <div id="Challenge"class='competition' >
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#Challenge')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto "  >
+                            <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/svg/chalenge.svg" class="fll-top"  alt="">
+                            <h2 class=" h2 text-light m-3" ><strong>(10 - 16)</strong></h2>
+                        </div>
+                        
+                        <div  class="h-center text-center container mt-md-5 " >
+        
+                            
+                            <div class="h3-1 text-light m-2 " style='font-weight: bold;'>
+                                FIRST® LEGO League Challenge — возможность принимать участие
+                                в инженерных соревнованиях, где они создают и программируют
+                                роботов, чтобы выполнять задания на поле соревнований.
+                                Участники также разрабатывают проекты, решающие реальные
+                                проблемы, и учатся работать в команде.
+                                <br>
+                                Командам FLL Challenge предоставляется возможность получить
+                                лицензию на участие в чемпионате Индии, в городе Гоа.
+                            </div>
+                                    
+                            <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/rebULiCb86Q2RJf99" ><button class="button bg-white red s-md h3 " style="height: 48px; ">Участвовать</button></a></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div id="FTC" class="competition">
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#FTC')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto"  >
+                            <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/svg/FTC.svg" class="ftc-top"  alt="">
+                            <h2 class=" h2 text-light m-3" ><strong>(12 - 18)</strong></h2>
+                        </div>
+                        
+                        <div  class="h-center text-center container mt-md-5 pt-md-5" >
+        
+                            
+                                <div class="h3-1 text-light m-2 " style='font-weight: bold;'>
+                                    FIRST® Tech Challenge — это соревнование для подростков,
+                                    которые проектируют, строят и программируют роботов для
+                                    выполнения сложных задач на арене. На чемпионате участвуют
+                                    более 25-ти команд со всего Казахстана.
+                                    <br>
+                                    Командам FIRST TECH Challenge предоставляется возможность
+                                    получить лицензии на участие в чемпионате Индии, в городе
+                                    Гоа и в Индонезий, в городе Депок. 
+                                </div>
+                                    
+                           
+                            <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/ahNmAWqkYsqfExFN8" ><button class="button bg-white orange h3 " style="height: 48px; ">Участвовать</button></a></div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+            
+        </div>
     </main>
 </body>
 </html>

@@ -1,13 +1,4 @@
-/* @import url(https://db.onlinewebfonts.com/c/608e0e06737d0946ba97b34995102218?family=CCScottMcCloud+W00+Bold); */
-@font-face {
-    font-family: "CCScottMcCloud W00 Bold";
-    src: url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.eot");
-    src: url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/608e0e06737d0946ba97b34995102218.svg#CCScottMcCloud W00 Bold")format("svg");
-}
+
 @font-face {
     font-family: "asinastra";
     src: url("https://raw.githubusercontent.com/arrietta/TechCup/main/asinastra.otf") format("opentype");
@@ -173,15 +164,7 @@ body{
     height: calc(100vh - 82px);
     z-index: 1;
 }
-.bg-dark-5{
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    background-color: #000000!important;
-    opacity: 0.8;
-    z-index: 0;
-    width: 100%;
-}
+
 
 .nav-item{
     margin: 10px;
@@ -203,83 +186,77 @@ body{
 .f-scot{
     font-family: 'CCScottMcCloud W00 Bold' ;
 }
-.bg-orange{
-    background-color: #efac30!important;
-   
+.bg-d::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
     background-size: cover;
-   
+    filter: blur(3px) ; 
+    z-index: -1;
 }
-.bg-green{
+.bg-orange::before{
+    background-color: #efac30!important;   
+}
+.bg-orange[blur='none']{
+    background-color: #efac30!important;   
+}
+
+.bg-green::before{
     background-color: #009340!important;
-    
 }
-.bgi-green{
-    background-image: url(images/green.png);
-    background-size: cover;
-    filter: blur(3px);
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    background-position: 50%  ;
-    height: calc(100vh - 82px);
-    z-index: 1;
+
+.bg-green[blur='none']{
+    background-color: #009340!important;
 }
-.bgi-red{
+
+.bg-red::before
+{
+    background-color: #dd0e1a!important;
+}
+.bg-red[blur='none']
+{
+    background-color: #dd0e1a!important;
+}
+.bg-blue::before{
+    background-color: #009ddd!important; 
+}
+.bg-black::before{
+    background-color: #000;
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/black.svg);
+    filter: blur(3px) brightness(0.3); 
+}
+
+.bgi-green::before{
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/green.png);
+}
+.bgi-red::before{
+    filter: blur(6px) brightness(0.8); 
     background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/red.png);
-    background-size: cover;
-    filter: blur(3px);
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    background-position: 50%  ;
-    height: calc(100vh - 82px);
-    z-index: 1;
 }
-.bgi-orange{
+.bgi-orange::before{
+    filter: blur(6px) brightness(0.8); 
     background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/orange.png);
-    background-size: cover;
-    filter: blur(3px);
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    background-position: 50%  ;
-    height: calc(100vh - 82px);
-    z-index: 1;
 }
-.bgi-white{
-    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/orange.png);
-    background-size: cover;
-    filter: blur(3px);
-    margin: auto;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    background-position: 50%  ;
-    height: calc(100vh - 82px);
-    z-index: 1;
-}
-.bg-blue{
-    background-color: #009ddd!important;
-  
-    background-size: cover;
+.bgi-white::before{
+    filter: blur(6px) brightness(); 
+    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/images/white.png);
    
 }
-.bg-black{
-    background-color: #0e0e0e!important;
-    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/black.svg);
-    background-size: cover;
-  
-    background-position: 50% ;
+
+
+
+.pos-r{
+    position: relative;
 }
-.img-bg-black{
-    margin: 20px 0;
-    background-image: url(https://raw.githubusercontent.com/arrietta/TechCup/main/splashes/svg/black.svg);
-    background-size: cover;
-    background-position: 50% ;
-}
+
+
+
+
+
 .ab-center{
     position: absolute;
     top: 50%;
@@ -293,7 +270,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.blur{
+.blur::before{
     filter: blur(3px);
     position: absolute; 
     width: 100%; 
@@ -303,11 +280,7 @@ body{
 p{
     font-family: 'inter';
 }
-.bg-red
-{
-    background-color: #dd0e1a!important;
-    background-size: cover;
-}
+
 .red{
     color: #dd0e1a!important;
 }
@@ -488,6 +461,13 @@ button, button:active, button:focus {
 }
 .h4{
     font-size: 20px!important;
+}
+.h5{
+    font-size: 16px!important;
+}
+.no_dec{
+    text-decoration: none;
+    list-style: none;
 }
 
 footer{
