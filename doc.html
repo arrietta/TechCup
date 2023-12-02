@@ -17,15 +17,25 @@
             
         }
         body::before{
+            background-color: #1e1e1e;
             background-image: url('images/TechCup_1.png');
             position: fixed;
-          
+            content: "";
+            
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+           
+            background-size: cover;
+            filter: blur(4px) brightness(0.2); 
             
         }
         
     </style>
 </head>
-<body class="bg-d">
+<body >
     <Header>
         <nav class="navbar navbar-expand-lg navbar-black fixed">
             <a class="navbar-brand Logo" href="#" >
@@ -70,7 +80,7 @@
             </li>
             <li class="nav-item h-center text-center">
                 <a class="nav-link text-light " href="index.html">
-                    First Robotics
+                   FAQ
                 </a>
             </li>
             <li class="nav-item h-center text-center">
@@ -94,7 +104,52 @@
         
     </Header>
     <main >
-        <div class="content background-6 blur" id="page-1" >
+        <div class="video-container background-6 blur">
+            <video  autoplay  muted id="background-video" style="transition: 1s;">
+              <source src="images/render final.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            
+            <div class="content ab-center"  id="page-1" style="z-index: 2; display: none;">
+                <div class="ab-top" id="top_partners">
+                    <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/ustem_foundation-26.png" class='logo-s'alt=""><img class="logo-s" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/Daryn_3.png" class='' alt="" >
+                </div>
+                <div class="Reg mt-md-5">
+                    <div class="Tech"><img onclick="hide_choose()" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png"  class='logo' alt=""> </div>
+                    <div class="date" id="date"><h2>11-12 ДЕКАБРЯ</h2></div>
+                    <a  href="#" id="reg"><button class="button bg-orange f-asin" blur="none" onclick="show_choose()">Регистрация</button></a>
+                    <div id="choose" style="display: none;">
+                        
+                        <div class="row ">
+                            <div class="col-xl-12  my-md-1 my-1  text-center f-scot p-2 "><a href="#page-6" onclick="down()"><button class="button bg-red  " blur="none">First Robotics</button></a></div>
+                            <div class="col-xl-12  my-md-1 my-1 text-center f-scot p-2" ><a href="#page-7" onclick="down()"><button class="button bg-orange " blur="none">TechCup Drones</button></a></div>
+                            <div class="col-xl-12   my-md-1 my-1  text-center f-asin p-2" ><a href="https://forms.gle/ahNmAWqkYsqfExFN8" ><button class="button bg-green " blur="none">Гости</button></a></div>
+                        </div>
+                       
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+          </div>
+          <Script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var video = document.getElementById('background-video');
+                console.log(1);
+
+                // Удаляем видео после завершения
+                video.addEventListener('ended', function () {
+                    console.log(2);
+                    
+                    $('#background-video').css('opacity','0')
+                    // $('#background-video').fadeOut()
+                    setTimeout($('#page-1').fadeIn(),500)
+                    // $('#page-1').fadeIn()
+                });
+                });
+          </Script>
+        <!-- <div class="content background-6 blur" id="page-1" >
             <div class="ab-top" id="top_partners">
                 <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/ustem_foundation-26.png" class='logo-s'alt=""><img class="logo-s" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/Daryn_3.png" class='' alt="" >
             </div>
@@ -115,7 +170,7 @@
                 
             </div>
             
-        </div>
+        </div> -->
         <div class="container-fluid content  h-center" id="page-2">
             
             <div class="ab-top" style="top:2%"  >
@@ -133,7 +188,7 @@
             
             
         </div>
-        <div class="container-fluid bg-black bg-blur py-5"  id="page-3">
+        <div class="container-fluid bg-black bg-d pos-r py-5"  id="page-3">
             
                 <div class=" container my-5">
                     <div class="h-center">
@@ -178,18 +233,7 @@
                         <p class="text-light orange">
                             #TechCupAlmaty2023
                         </p>
-                       
-                        
-                       
-                        
-                        
-                        
-                        
-                        
-                        
-                       
-                        
-                       
+                
                         
                     </div>
                     

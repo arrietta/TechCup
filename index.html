@@ -29,7 +29,7 @@
             z-index: -1;
            
             background-size: cover;
-            filter: blur(4px) brightness(0.2); 
+            filter: blur(3px) brightness(0.2); 
             
         }
         
@@ -80,13 +80,18 @@
                 
             </li>
             <li class="nav-item h-center text-center">
-                <a class="nav-link text-light " href="index.html">
+                <a class="nav-link text-light " href="https://docs.google.com/document/d/1ttCWqNIPXtpenuD3UrimHSaKAQfl9E0kTc7tNyAoJdA/edit">
+                    <Strong>Положение</Strong>
+                </a>
+            </li>
+            <li class="nav-item h-center text-center">
+                <a class="nav-link text-light " href="/FAQ">
                     <Strong>FAQ</Strong>
                 </a>
             </li>
             <li class="nav-item h-center text-center">
-                <a class="nav-link text-light " href="index.html">
-                    Стать партнером
+                <a class="nav-link text-light " href="#" onclick="reg()">
+                    Регистрация
                 </a>
             </li>
         </ul>
@@ -109,28 +114,50 @@
         
         
         
-        <div class="content background-6" id="page-1" style="z-index: 2;">
-            <div class="ab-top" id="top_partners">
-                <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/ustem_foundation-26.png" class='logo-s'alt=""><img class="logo-s" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/Daryn_3.png" class='' alt="" >
-            </div>
-            <div class="Reg">
-                <div class="Tech"><img onclick="hide_choose()" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" class='logo' alt=""> </div>
-                <div class="date" id="date"><h2>11-12 ДЕКАБРЯ</h2></div>
-                <a  href="#" id="reg"><button class="button bg-orange f-asin" blur="none" onclick="show_choose()">Регистрация</button></a>
-                <div id="choose" style="display: none;">
-                    
-                    <div class="row ">
-                        <div class="col-xl-12  my-md-1 my-1  text-center f-scot p-2 "><a href="#page-6" onclick="down()"><button class="button bg-red  " blur="none">First Robotics</button></a></div>
-                        <div class="col-xl-12  my-md-1 my-1 text-center f-scot p-2" ><a href="#page-7" onclick="down()"><button class="button bg-orange " blur="none">TechCup Drones</button></a></div>
-                        <div class="col-xl-12   my-md-1 my-1  text-center f-asin p-2" ><a href="https://forms.gle/ahNmAWqkYsqfExFN8" ><button class="button bg-green " blur="none">Гости</button></a></div>
+        <div class="video-container background-6 blur" >
+            <video  autoplay  muted id="background-video" style="transition: 1s;">
+              <source src="https://raw.githubusercontent.com/arrietta/TechCup/main/images/render final.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            
+            <div class="content ab-center"  id="page-1" style="z-index: 2; display: none;">
+                <div class="ab-top" id="top_partners">
+                    <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/ustem_foundation-26.png" class='logo-s'alt=""><img class="logo-s" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/Daryn_3.png" class='' alt="" >
+                </div>
+                <div class="Reg mt-md-5">
+                    <div class="Tech"><img onclick="hide_choose()" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png"  class='logo' alt=""> </div>
+                    <div class="date" id="date"><h2>11-12 ДЕКАБРЯ</h2></div>
+                    <a  href="#" id="reg"><button class="button bg-orange f-asin" blur="none" onclick="show_choose()">Регистрация</button></a>
+                    <div id="choose" style="display: none;">
+                        
+                        <div class="row ">
+                            <div class="col-xl-12  my-md-1 my-1  text-center f-scot p-2 "><a href="#page-6" onclick="down()"><button class="button bg-red  " blur="none">First Robotics</button></a></div>
+                            <div class="col-xl-12  my-md-1 my-1 text-center f-scot p-2" ><a href="#page-7" onclick="down()"><button class="button bg-orange " blur="none">TechCup Drones</button></a></div>
+                            <div class="col-xl-12   my-md-1 my-1  text-center f-asin p-2" ><a href="https://forms.gle/ahNmAWqkYsqfExFN8" ><button class="button bg-green " blur="none">Гости</button></a></div>
+                        </div>
+                       
+                        
                     </div>
-                   
                     
                 </div>
                 
             </div>
+          </div>
+          <Script>
+            function reg(){
+               
+                $('#background-video').css('opacity','0')  
+                setTimeout(function (){$('#page-1').fadeIn()},500)
+               
             
-        </div>
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                var video = document.getElementById('background-video');
+                video.addEventListener('ended', function () {
+                   reg();
+                });
+            });
+          </Script>
         
         <div class="container-fluid content  h-center" id="page-2">
             
@@ -224,17 +251,56 @@
             
             
         </div>
-        <div class="container-fluid  p-5 row" >            
-            <div class=" h-center text-center col-12 ">
-            
+       
+       
+        <div class="bgi-white bg-d pos-r container-fluid  p-4">
+            <div class="text-center mb-md-3 m-2" >
+                <div class="h3"> <strong> Дополнительно на</strong> </div>
+                <img class="logo-m" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" height="100" alt="" >
+            </div>
+            <div class="container-fluid" >
                 
+                    <div class="row m-auto " style="justify-content: space-between;">
+                        <div class="col-md-6 text-light pr-md-5 " >
+                            <div class="bg-orange b-bord m-md-5 p-md-3 p-2 my-3" blur="none" >
+                                <div class="h4"> <strong> Drone Racing</strong></div>
+                                <p>соревнования по дрон-гонкам позволяют участникам
+                                    превнести элементы скорости, мастерства и
+                                    адреналина в мир технологий
+                                </p>
+                            </div>
+                            <div class="bg-orange b-bord m-md-5 p-md-3 p-2  my-3" blur="none" >
+                                <div class="h4"><strong>Мастер-классы на тему AI</strong></div>
+                                <p>предоставляют участникам возможность изучать
+                                    технологии, связанные с AI, и применять их в
+                                    практических задачах
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6  text-light pl-md-5 " >
+                            <div class="bg-orange b-bord m-md-5 p-md-3 p-2  my-3" blur="none" >
+                                <div class="h4"><strong>"Час кода"</strong></div>
+                                <p>это образовательная инициатива, призванная
+                                    познакомить учеников с основами программирования
+                                    и компьютерных наук через геймификацию
+                                </p>
+                            </div>
+                            <div class="bg-orange b-bord m-md-5 p-md-3 p-2  my-3" blur="none" >
+                                <div class="h4"><strong>Выставка Tech-проектов</strong></div>
+                                <p>предоставляет платформу для демонстрации
+                                    инновационных проектов и технологических
+                                    разработок для Tech партнеров
+                                </p>
+                            </div>
+                        </div>
+                   
+                </div>
                 
                 
             </div>
             
-            
         </div>
-        <div class="container-fluid bgi-white bg-d pos-r" id="page-6">    
+        <div class="container-fluid pt-5 bg-white-x bg-d pos-r" id="page-6" >    
             
             <div class="  content p-2 pt-5 " style="left: 0;   "  >
                 
@@ -245,9 +311,9 @@
                         </div>
                         <div class="h-center">
                             <div class="text-center ">
-                                <div class=" my-md-1 my-1  text-center f-scot p-2 "><button class="button bg-green  " blur="none" onclick="open_info('#explore')"  >FLL Explore</button></div>
-                                <div class="  my-md-1 my-1 text-center f-scot p-2" ><button class="button bg-red  " blur="none" onclick="open_info('#Challenge')" >FLL Challenge</button></div>
-                                <div class="  my-md-1 my-1  text-center f-asin p-2" ><button class="button bg-orange  " blur="none" onclick="open_info('#FTC')">FIRST Tech Challenge</button></div>
+                                <div class=" my-md-1 my-1  text-center f-scot p-2 "><button class="button bg-green  " blur="none" onclick="open_info('#first','#explore')"  >FLL Explore</button></div>
+                                <div class="  my-md-1 my-1 text-center f-scot p-2" ><button class="button bg-red  " blur="none" onclick="open_info('#first','#Challenge')" >FLL Challenge</button></div>
+                                <div class="  my-md-1 my-1  text-center f-asin p-2" ><button class="button bg-orange  " blur="none" onclick="open_info('#first','#FTC')">FIRST Tech Challenge</button></div>
                             </div>
                             
                         </div>    
@@ -257,7 +323,7 @@
                     <div class="competition "id="explore"  >
                         
                         <div class="ab-top-left">
-                            <div class="h-center" onclick="close_info('#explore')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                            <div class="h-center" onclick="close_info('#first','#explore')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
                         </div>
                         
                         <div class="text-center m-auto  "  >
@@ -285,7 +351,7 @@
                     
                     <div id="Challenge"class='competition' >
                         <div class="ab-top-left">
-                            <div class="h-center" onclick="close_info('#Challenge')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                            <div class="h-center" onclick="close_info('#first','#Challenge')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
                         </div>
                         
                         <div class="text-center m-auto "  >
@@ -314,7 +380,7 @@
                     </div>
                     <div id="FTC" class="competition">
                         <div class="ab-top-left">
-                            <div class="h-center" onclick="close_info('#FTC')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                            <div class="h-center" onclick="close_info('#first','#FTC')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
                         </div>
                         
                         <div class="text-center m-auto"  >
@@ -350,7 +416,214 @@
             
             
         </div>
-        <div class="container-fluid " id="page-7">            
+        <div class="container-fluid p-0 "  >            
+            <div class=" content row m-0">
+                <div class="col-md-4 bg-white bg-d pos-r dis-sm" >
+                    <div class="m-auto text-center ">
+                        <img src="logotype/png/hour-of-code-logo.png" class="ab-center" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col-md-8   p-0">
+                    <div class=" bg-blue content pos-r bg-d"  ></div>
+                    <div class="ab-center" style="z-index: 1;    ">
+                        <h1 class="h1-1 text-light  text-center text-md-start "><strong>ЧАС КОДА</strong> </h1>
+                        <h1 class="text-light my-md-3 p-4 text-start h3">
+                            <div>
+                                — Это глобальное движение, которое охватывает 
+                            несколько миллионов студентов и учеников из более
+                            180 стран.
+                            </div>
+                            <br>
+                            <div>
+                                Занятие длиной в один час, в ходе которого учащиеся
+                                смогут в игровой форме познакомиться с IT
+                                <ul>
+                                    <li class="m-1">В Казахстане акция проходит с 2015 года</li>
+                                    <li class="m-1">В 2022 году участие принял каждый 10-й школьник!</li>
+                                    <li class="m-1">Денежный приз</li>
+                                    <li class="m-1">Уроки должны пройти во всех школах и во всех классах с 4 по 11 декабря</li>
+                                    
+                                </ul>
+                                
+                            </div>
+
+
+                            
+                            
+                            </h1>
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="container-fluid pt-5 " id="page-7" >    
+            
+            <div class="  content p-2 pt-5 " style="left: 0;   "  >
+                
+                <div class="container p-0" style="z-index: 1;">
+                    <div  id="tech" >
+                        <div class="text-center mb-md-3" >
+                            <img class="logo-m" src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-20.png" height="100" alt="" >
+                        </div>
+                        <div class="h-center">
+                            <div class="text-center ">
+                                <div class=" my-md-1 my-1  text-center f-scot p-2 "><button class="button bg-green  " blur="none" onclick="open_info('#tech','#d-f')"  >Drone Ball</button></div>
+                                <div class="  my-md-1 my-1 text-center f-scot p-2" ><button class="button bg-red  " blur="none" onclick="open_info('#tech','#d-r')" >Drone Race</button></div>
+                                <div class="  my-md-1 my-1  text-center f-asin p-2" ><button class="button bg-orange  " blur="none" onclick="open_info('#tech','#d-c')">Cyber Tournament</button></div>
+                            </div>
+                            
+                        </div>    
+                    </div>
+                    
+                    
+                    <div class="competition text-light "id="d-f"  >
+                        
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#tech','#d-f')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto  "  >
+                            <div class="h1">Дрон</div>
+                            
+                        </div>
+                        
+                        <div  class="text-center container mt-5 row m-0" >
+        
+                            
+                            <div class="h4 my-2 col-md-6 " style='font-weight: bold;'>
+                                <div class="h2">Футбол</div>
+                                Забить гол квадрокоптером. Специальные дроны с внешним защитным корпусом-сферой управляются участниками в закрытой безопасной площадке. Задача: попасть в ворота дроном как можно больше раз за ограниченное время.
+                            </div>
+                            <div class="h4  my-2 col-md-6 mt-5 mt-sm-3" style='font-weight: bold;'>
+                                <div class="h2">Баскетбол</div>
+                                Участнику необходимо управлять специальным дроном и попасть им в кольцо наибольшее количество раз за ограниченное время.   
+                            </div>
+                
+                        </div>
+                    
+                        <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/623At8niezrYieoRA" ><button class="button bg-white green s-md h3 " style="height: 48px; ">Участвовать</button></a></div>
+                        
+                    </div>
+                    
+                    <div id="d-r" class='competition text-light ' >
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#tech','#d-r')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto "  >
+                            <div class="h1">Mini Drone Racing</div>
+                        </div>
+                        
+                        <div  class="h-center text-center container mt-md-5 " >
+        
+                            
+                            <div class="h3-1 text-light m-2 " style='font-weight: bold;'>
+                                Соревнование среди участников на квадрокоптерах на специальной трассе для микродронов до 75 мм. Формат:  участие со своим дроном. Видео передатчик аналог и цифра
+                            </div>
+                                    
+                            <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/HNbNFCituU5WZrFD8" ><button class="button bg-white red s-md h3 " style="height: 48px; ">Участвовать</button></a></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <div id="d-c" class="competition text-light">
+                        <div class="ab-top-left">
+                            <div class="h-center" onclick="close_info('#tech','#d-c')" ><img src="https://raw.githubusercontent.com/arrietta/TechCup/main/icons/arrow.svg"style="opacity: 0.5; height: 5vh; cursor: pointer;" alt=""></div>
+                        </div>
+                        
+                        <div class="text-center m-auto"  >
+                            <div class="h1">Кибер Соревнование в симуляторе DCL </div>
+                        </div>
+                        
+                        <div  class="h-center text-center container mt-md-5 pt-md-5" >
+        
+                            
+                                <div class="h3-1 text-light m-2 " style='font-weight: bold;'>
+                                    DCL (Drone Champions League) представляет собой захватывающее киберспортивное событие, основанное на дрон-рейсинге в виртуальном мире. Участники соперничают в симуляторе, предлагающем высокотехнологичные трассы и интенсивные бои за первенство. 
+                                </div>
+                                    
+                           
+                            <div class=" my-md-1 my-md-5 my-1 text-center f-asin p-2 " onclick=""><a href="https://forms.gle/QEGDUqtwWvGbS25u5" ><button class="button bg-white orange h3 " style="height: 48px; ">Участвовать</button></a></div>
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <div class="container-fluid bg-black bg-d pos-r py-5"  id="page-3">
+            
+            <div class=" container my-5">
+                <div class="h-center">
+                    <h2 class="orange h3 "><strong>Презентация Инновационных проектов FLL EXPLORE и FLL CHALLENGE на большой сцене:</strong></h2>
+                    <p class="text-light">
+                        - Зарегистрируйте свой инновационный проект по теме сезона MASTERPIECE;
+                    </p>
+                    <p class="text-light">
+                        - Подготовьте презентацию о своем Инновационном проекте для демонстрации;
+                    </p>
+                    <p class="text-light">
+                        - Оформите презентацию в стиле TechCup, используя брендбук, который доступен на сайте;
+                    </p>
+                    <p class="text-light">
+                        - Выступление по презентации не должно превышать 10 минут;
+                    </p>
+                    <p class="text-light">
+                        
+                    - Вышлите свою презентацию до 5 декабря на почту: n.nurzhanov@ustemrobotics.kz  
+                    </p>
+                    <p class="text-light">
+                        - В теме письма укажите Название команды_название проекта_категория (например, Alpha Study_FLL Explore) 
+                    </p>
+                    <p class="text-light">
+                        - Укажите название файла следующим образом: Название команды_название проекта_категория (например, Alpha Study_FLL Explore.pdf) 
+                    </p>
+                    <p class="text-light">
+                        - Формат презентации .pdf 
+                    </p>
+                    <p class="text-light">
+                        Защищать Инновационный проект на сцене можно как единолично, так и в команде.
+                    </p>
+                    <p class="text-light">
+                        Для  мероприятие будут отобраны 8 лучших презентаций и идей (по 2 команды из каждой категории - всего 4 команды на каждый день).
+                    </p>
+                    <p class="text-light">
+                        Воспользуйтесь шансом представить свой проект широкой аудитории, выиграть ценные призы и получить заслуженное внимание на мероприятии.
+                    </p>
+                    <p class="text-light">
+                        Удачи в создании и представлении ваших инновационных идей!
+                    </p>
+                    <p class="text-light orange">
+                        #TechCupAlmaty2023
+                    </p>
+                   
+     
+                </div>
+                
+            </div>
+            
+        
+        
+        
+    </div>
+    <div class=" text-center pt-2 hide-sc" >
+        <img src="images/Navigation.png" width="100%" id="nabigate" class="hide-sc" style="overflow:auto; max-width: auto!important;" alt="">
+            
+        
+        
+    </div>
+        <div class="container-fluid " >            
             <div class=" content ">
                 <div class="ab-top dis-sm" id="top_partners">
                     <img src="https://raw.githubusercontent.com/arrietta/TechCup/main/logotype/png/techcup-19.png" class='logo-s'alt="">
@@ -368,7 +641,17 @@
         </div>
         
         <script>
-            
+            let zoom = true;
+            $(document).ready(function() {
+                $('#nabigate').on('click', function() {
+                    if(zoom){
+                        $(this).css('width', '200%');
+                    }else{
+                        $(this).css('width', '100%');
+                    }
+                    zoom=!zoom;
+                });
+            });
             function show_choose(){
                 $('#reg').hide();
                 $('#top_partners').fadeOut();
@@ -393,18 +676,18 @@
                     $('#top_btn').fadeIn();
                 }
             }
-            function close_info(e){
+            function close_info(p,e){
           
                 $(e).fadeOut();
-                $('#first').fadeOut();
+               
                 setTimeout(function(){
-                    $('#first').fadeIn();
+                    $(p).fadeIn();
                 } ,500);
                 
             }
-            function open_info(e){
+            function open_info(p,e){
                
-                $('#first').fadeOut();
+                $(p).fadeOut();
                 
                 setTimeout(function(){
                     $(e).fadeIn()
@@ -415,7 +698,7 @@
            function down(){
                 setTimeout(function(){
                     window.scroll(0,window.scrollY -81);
-                },500)
+                },1000)
              
             }
            
