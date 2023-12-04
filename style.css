@@ -22,11 +22,12 @@ html{
     
     scroll-behavior: smooth;
 }
+
 *{
     font-family: 'Inter';
 }
 .b-bord{
-    border: #1e1e1e 3px solid;
+    border: #1e1e1e 4px solid;
 }
 body{
     margin: 0;
